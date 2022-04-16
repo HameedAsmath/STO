@@ -72,8 +72,7 @@ export const ContactUsForm = () => {
             setLoading(true)      
             axios.post('https://sheet.best/api/sheets/78ac90ee-7d8b-4b86-8f4a-d25958fb89bb', data).then((response) => {
                 setLoading(false)
-                console.log(response.statusText)
-                if (response.statusText == "OK" || response.statusText == "") {
+                if (response.status == 200) {
                     toast.success("Form Submitted Successfully")
                 }else{
                     toast.error("Kindly Check Your Internet Connection or Try Again Later")

@@ -138,8 +138,7 @@ export const ScholarshipForm = () => {
                     //Posting data
                     setLoading(true)
                     axios.post('https://sheet.best/api/sheets/a291bcff-6f90-4751-8dcb-2d8ae343b56f', data).then((response) => {
-                        console.log(response.statusText)
-                        if (response.statusText === "OK" || response.statusText == "") {
+                        if (response.status == 200) {
                             setLoading(false)
                             toast.success("Form Submitted Successfully")
                         }else{
