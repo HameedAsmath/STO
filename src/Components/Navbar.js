@@ -5,7 +5,7 @@ export const Navbar = () => {
   return (
     <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <div className="container-md">
+    <div className="container">
     <a class="navbar-brand" href="/">
       <img src={Logo} alt="" width="54" height="48"/>
     </a>
@@ -16,7 +16,7 @@ export const Navbar = () => {
       <div className="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link active text-primary" aria-current="page" href="#">Home</a>
+            <a className="nav-link active text-primary" aria-current="page" href="/">Home</a>
           </li>
           <li className="nav-item">
             <a className="nav-link text-primary" href="#about">Who we are</a>
