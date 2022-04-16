@@ -6,7 +6,7 @@ export const Navbar = () => {
     <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
     <div className="container-md">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" href="/">
       <img src={Logo} alt="" width="54" height="48"/>
     </a>
       <a className="navbar-brand fw-bolder text-primary" href="#">Step To Oppurtunities</a>

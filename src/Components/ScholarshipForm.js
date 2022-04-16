@@ -106,6 +106,9 @@ export const ScholarshipForm = () => {
             <Header heading="Scholarship"/>
 
              <div className='container-fluid col-md-11 mt-3 card shadow-lg' data-aos="zoom-in">
+             <div className='container-fluid text-center'>
+                 <span className='text-wrap fw-light lh-lg lead'>The scholarship is fully based on merit only. Our team will inspect directly</span>
+            </div>
                 <Formik
                 initialValues={{ Name: "", Gender: "", Email: "", FatherName: "",Qualification: "", Community: "", TenthMark: "", TwelvethMark: "", Whatsapp: "", Contact: "", FirstGraduate: "", District: "", GroupName: "", Aadhar: "", WhatsNext: "", Reference: "", AreaofStudy: ""}}
                 validationSchema={ScholarshipSchema}
@@ -134,6 +137,7 @@ export const ScholarshipForm = () => {
                     //Posting data
                     setLoading(true)
                     axios.post('https://sheet.best/api/sheets/a291bcff-6f90-4751-8dcb-2d8ae343b56f', data).then((response) => {
+                        console.log(response.statusText)
                         if (response.statusText == "OK") {
                             setLoading(false)
                             toast.success("Form Submitted Successfully")
