@@ -9,12 +9,12 @@ import { Footer } from '../Sections/Footer';
 export const Home = () => {
   return (
     <div className='mt-3'>
-      
-        {/* Navbar */}
-        <Navbar/>
 
         {/* Below div is used to give width to the entire website without navbar.That is all the contents of the website is inside that container */}
         <div className='container p-md-5 p-1 mt-2'>
+
+          {/* Navbar */}
+          <Navbar/>
 
         {/* Banner Image */}
         <div className='container-fluid' data-aos="fade-up">

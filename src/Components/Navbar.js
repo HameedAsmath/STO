@@ -3,7 +3,7 @@ import Logo from "../assets/STOlogo.png"
 
 export const Navbar = () => {
   return (
-    <div className='container-sm' mb-1>
+    <div className='container-sm mb-1' >
         <nav className="navbar navbar-expand-lg  navbar-light bg-light fixed-top">
     <div className="container-md container-sm">
     <a className="navbar-brand" href="/">
