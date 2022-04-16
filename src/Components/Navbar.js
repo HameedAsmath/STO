@@ -7,7 +7,7 @@ export const Navbar = () => {
         <nav className="navbar navbar-expand-lg  navbar-light bg-light fixed-top">
     <div className="container-md container-sm">
     <a className="navbar-brand" href="/">
-      <img src={Logo} alt="" width="50" height="44"/>
+      <img src={Logo} alt="" width="46" height="40"/>
     </a>
       <a className="navbar-brand fw-bolder text-primary" href="#">Step To Oppurtunities</a>
       <button className="navbar-toggler shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
