@@ -72,6 +72,7 @@ export const ContactUsForm = () => {
             setLoading(true)      
             axios.post('https://sheet.best/api/sheets/78ac90ee-7d8b-4b86-8f4a-d25958fb89bb', data).then((response) => {
                 setLoading(false)
+                console.log(response.statusText)
                 if (response.statusText == "OK") {
                     toast.success("Form Submitted Successfully")
                 }else{
