@@ -105,10 +105,11 @@ export const ScholarshipForm = () => {
             {/* Header */}
             <Header heading="Scholarship"/>
 
-             <div className='container-fluid col-md-11 mt-3 card shadow-lg' data-aos="zoom-in">
-             <div className='container-fluid text-center'>
-                 <span className='text-wrap fw-light lh-lg lead'>The scholarship is fully based on merit only. Our team will inspect directly</span>
+            <div className='container-fluid text-center'>
+                <span className='text-wrap fw-light lh-lg lead'>The scholarship is fully based on merit only. Our team will inspect directly</span>
             </div>
+
+             <div className='container-fluid col-md-11 mt-3 card shadow-lg' data-aos="zoom-in">
                 <Formik
                 initialValues={{ Name: "", Gender: "", Email: "", FatherName: "",Qualification: "", Community: "", TenthMark: "", TwelvethMark: "", Whatsapp: "", Contact: "", FirstGraduate: "", District: "", GroupName: "", Aadhar: "", WhatsNext: "", Reference: "", AreaofStudy: ""}}
                 validationSchema={ScholarshipSchema}
