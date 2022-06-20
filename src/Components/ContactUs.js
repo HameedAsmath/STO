@@ -11,7 +11,7 @@ export const ContactUs = () => {
                 Devikarumariamman Nagar 2nd street<br/>
                 Sunnambu Kolathur<br/>
                 Kovilambakkam<br/>
-                Chennai-600117
+                Chennai-600117<br/>
                 +91 8072851166
             </p>
             </div>
